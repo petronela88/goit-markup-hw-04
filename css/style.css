@@ -284,6 +284,13 @@ address {
 
 /* Section 1 */
 .hero-section {
+    background-image:
+        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(/images/people-office\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
     padding: 188px 0;
 }
 
@@ -335,6 +342,18 @@ address {
     display: flex;
     flex-direction: column;
     width: 264px;
+}
+
+.icons2-container {
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    background-color: var(--cloud);
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .objectivs-title {
