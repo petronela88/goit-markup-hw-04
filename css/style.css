@@ -342,20 +342,7 @@ address {
     width: 264px;
 }
 
-/* icon style */
-/*
-.icons2-container {
-    width: 264px;
-    height: 112px;
-    margin-bottom: 8px;
-    background-color: var(--cloud);
-    border: 1px solid var(--light-slate);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-*/
+
 .objectivs-title {
     margin-bottom: 8px;
 }
@@ -405,30 +392,6 @@ address {
     padding: 32px 0;
 }
 
-/* icons style */
-/*
-.icons-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 16px;
-
-}
-
-.icons {
-    background-color: var(--iris);
-    width: 40px;
-    height: auto;
-    padding: 11px;
-    border-radius: 20px;
-}
-
-.icons2 {
-    width: 64px;
-    height: 64px;
-}
-*/
 
 /* Section 4 */
 .portfolio-section {
@@ -484,10 +447,7 @@ address {
 
 .hero-section {
     max-width: 1440px;
-    background-image:
-        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(/images/people-office\ 1.jpg);
-    background-position: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(.././images/people-office\ 1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
