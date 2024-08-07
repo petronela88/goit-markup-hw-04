@@ -259,12 +259,6 @@ address {
     align-items: center;
     justify-content: center;
     gap: 328px;
-
-    box-shadow:
-        0px 2px 1px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 1px 6px rgba(46, 47, 66, 0.08);
-    ;
 }
 
 .header-nav {
@@ -295,13 +289,6 @@ address {
 
 /* Section 1 */
 .hero-section {
-    background-image:
-        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(/images/people-office\ 1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0 auto;
     padding: 188px 0;
 }
 
@@ -356,6 +343,7 @@ address {
 }
 
 /* icon style */
+/*
 .icons2-container {
     width: 264px;
     height: 112px;
@@ -367,7 +355,7 @@ address {
     align-items: center;
     justify-content: center;
 }
-
+*/
 .objectivs-title {
     margin-bottom: 8px;
 }
@@ -411,11 +399,6 @@ address {
     border: none;
     border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
-
-    box-shadow:
-        0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .container-box {
@@ -423,6 +406,7 @@ address {
 }
 
 /* icons style */
+/*
 .icons-container {
     display: flex;
     flex-direction: row;
@@ -444,7 +428,7 @@ address {
     width: 64px;
     height: 64px;
 }
-
+*/
 
 /* Section 4 */
 .portfolio-section {
@@ -492,4 +476,238 @@ address {
 
 .footer-paragraph {
     width: 264px;
+}
+
+/* Implementing the Svgs, transitions and background images */
+
+/* Section hero background image */
+
+.hero-section {
+    max-width: 1440px;
+    background-image:
+        linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(/images/people-office\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+/* Section 2 Objectivs SVGS */
+
+.icons2-container {
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    background-color: var(--cloud);
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons2 {
+    width: 64px;
+    height: 64px;
+}
+
+/* Section 3 Our Team SVGS */
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.icons {
+    width: 40px;
+    height: 40px;
+}
+
+.icons-link {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--iris);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-link:hover,
+.icons-link:focus {
+    background-color: var(--ocean);
+}
+
+.svg-team {
+    fill: var(--cloud);
+}
+
+
+/* Footer SVGS */
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-legend {
+    margin-right: 120px;
+}
+
+.social-media {
+    width: 208px;
+    height: 80px;
+}
+
+.social-media-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-icons-element {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-icons-link {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--iris);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icons-link:hover,
+.footer-icons-link:focus {
+    background-color: var(--green);
+}
+
+.svg-footer {
+    fill: var(--cloud);
+}
+
+
+/* Our Portfoli - Text Overlay */
+
+.portfolio-lists {
+    transition:
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-lists:hover,
+.portfolio-lists:focus {
+    box-shadow:
+        0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-lists:hover .overlay,
+.portfolio-lists:focus .overlay {
+    transform: translateY(0);
+}
+
+.image-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--cloud);
+    padding: 40px 32px;
+    background-color: var(--iris);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Transitions */
+
+.header-item a,
+.header-item-address a {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.primary-button {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icons-link,
+.footer-icons-link {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* Our team Shades */
+
+.team-people {
+    box-shadow:
+        0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.main-header {
+    box-shadow:
+        0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    position: relative;
+}
+
+.nav-link-active {
+    color: var(--ocean);
+}
+
+.nav-link-active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--ocean);
+    border: none;
+    border-radius: 2px;
+}
+
+.hero-section {
+    max-width: 1440px;
 }
