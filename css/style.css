@@ -259,6 +259,12 @@ address {
     align-items: center;
     justify-content: center;
     gap: 328px;
+
+    box-shadow:
+        0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+    ;
 }
 
 .header-nav {
@@ -273,6 +279,11 @@ address {
 .header-list {
     display: flex;
     gap: 40px;
+}
+
+.header-item,
+.header-link {
+    padding: 24px 0;
 }
 
 .header-list-address {
@@ -344,6 +355,7 @@ address {
     width: 264px;
 }
 
+/* icon style */
 .icons2-container {
     width: 264px;
     height: 112px;
@@ -399,12 +411,18 @@ address {
     border: none;
     border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
+
+    box-shadow:
+        0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .container-box {
     padding: 32px 0;
 }
 
+/* icons style */
 .icons-container {
     display: flex;
     flex-direction: row;
@@ -422,6 +440,10 @@ address {
     border-radius: 20px;
 }
 
+.icons2 {
+    width: 64px;
+    height: 64px;
+}
 
 
 /* Section 4 */
@@ -445,6 +467,10 @@ address {
 
 .portfolio-lists {
     margin-bottom: 8px;
+}
+
+.our-team-img {
+    display: block;
 }
 
 .container-box-portfolio {
