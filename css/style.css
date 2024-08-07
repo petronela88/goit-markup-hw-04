@@ -186,9 +186,9 @@ address {
 
 
 /* Background Color configuration*/
-.hero-section {
+/*.hero-section {
     background-color: var(--navy-blue);
-}
+}*/
 
 .primary-button {
     background-color: var(--iris);
